@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+}
+
+header {
+    padding-top: 2px;
+    padding: 0 30px;
+    background-color:  #FA7F72;
+    color: #fff;
+}
+
+header nav li{
+    display: inline;
+    padding: 0 8px;
+    font-size: 20px;
+}
+header nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#produtos h2{
+    border-bottom: 3px solid #FA7F72;
+    padding-bottom: 16px;   
+}
+
+#sobre-a-loja h2 {
+    border-bottom: 3px solid #FA7F72;
+    max-width: 100%;
+    padding-bottom: 16px;
+    margin-bottom: 16px; 
+}
+
+.conteiner {
+    width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+section .conteiner{
+    display: flex;
+    align-items: center;
+}
+
+#sobre-a-loja img{
+    height: 600px;
+    margin-right: 32px;
+}
+
+.conteiner-flex{
+    display: flex;
+}
+
+section{
+    padding: 20px;
+}
+
+.lista-joias, #item-inicial{
+    flex-wrap: wrap;
+    padding-top: 16px;
+}
+
+section .conteiner {
+    align-items: flex-start;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+    margin-left: 0%;
+}
+
+.lista-joias li{
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-joias img {
+    max-width: 100%;
+}
+
+.lista-joias li h3{
+    margin: 16px 0;
+}
+
+.item-central{
+    margin-inline: 0 5%;
+}
+
+
+.lista-joias li button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #FA7F72;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .conteiner{
+        max-width: 100%;
+    }
+
+    #sobre-a-loja img{
+        height: 400px;
+        margin-right: 32px;
+    }
+
+    section .lista-joias {
+        justify-content: center; 
+        text-align: center;
+    }
+
+    .lista-joias li {
+        max-width: 100%;
+    }
+    
+    #produtos h2{
+        padding-left: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .conteiner{
+        max-width: 90%;
+    }
+    #sobre-a-loja img{
+        height: auto;
+        margin-right: 0;
+        max-width: 100%;
+    }
+    
+    #sobre-a-loja h2{
+        padding-top: 16px;
+    }
+
+    #sobre-a-loja p {
+        display: block;
+        max-width: 100%;
+    }
+
+    .conteiner,
+    .conteiner-flex {
+        flex-direction: column;
+    }
+
+
+    .lista-joias li {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    #produtos h2{
+        padding-left: 16px;
+    }
+
+}
